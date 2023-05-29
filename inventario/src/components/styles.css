@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+.alinear{
+padding: 70px;
+}
+
+.alena-btn{
+    display: inline-block !important;
+    width: 20px;
+}
+
+#btn1{
+    margin-left: 12px !important;
+}
+.btn-2{
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.uii{
+    width: 70px
+}
