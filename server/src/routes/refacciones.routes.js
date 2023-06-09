@@ -56,7 +56,7 @@ router.get("/:id", (req, res) => {
 router.put("/:id", (req, res) => {
 
     const { id } = req.params;
-    const { descripcion, numParte, precio, cantidad } = req.body //Campos a actualizar
+    const { descripcion, numParte, precio, cantidad, imagen } = req.body //Campos a actualizar
         esquemaInventario
             .updateOne({ _id: id }, { $set: { descripcion, numParte, precio, cantidad } })
             .then((data) => res.json(data))

@@ -1,13 +1,13 @@
 import React from 'react'
+import Api from './components/Api'
+import Table  from './components/Table'
 import Nav from './components/Nav'
-import Table from './components/Table'
-
 const App = () => {
   return (
     <>
       <Nav/>
       <Table/>
-      
+      <Api/>
     </>
   )
 }

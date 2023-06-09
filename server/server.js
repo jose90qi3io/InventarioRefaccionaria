@@ -1,4 +1,4 @@
-const bodyParser = require('body-parser');
+
 const express = require ("express");
 const app = express();
 const cors = require("cors")
@@ -16,9 +16,9 @@ const {bdConeccion} = require ("./src/models/db.js")
 bdConeccion()
 
 //Middlewers
-app.use(bodyParser.json());
-app.use(express.json())
 app.use(cors());
+app.use(express.json())
+
 
 //Importacion de la ruta 
 const rutasInventario = require("./src/routes/refacciones.js")
@@ -32,4 +32,4 @@ app.get('/',(req,res)=>{
 //Prefijo "API" a las rurasInventario
 app.use("/API", rutasInventario)
 
-app.listen(port, ()=> console.log(`servidor corriendo en el puesto ${port}`))
+app.listen(port, ()=> console.log(`servidor corriendo en el puerto ${port}`))
